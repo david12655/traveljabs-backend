@@ -9,6 +9,9 @@ app.use(express.json());
 app.use("/appointments", require("./routes/appointments"));
 app.use("/patients",     require("./routes/patients"));
 app.use("/vaccines",     require("./routes/vaccines"));
+app.use("/vaccinations", require("./routes/vaccinations"));
+app.use("/status", require("./routes/status"));
+app.use("/staff",  require("./routes/staff"));
 app.use("/clinics",      require("./routes/clinics"));
 
 app.get("/", (req, res) => {
